@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace LinqTutorials
@@ -39,6 +38,44 @@ namespace LinqTutorials
         public string Name { get; set; }
         public int TotalMarks { get; set; }
 
+        public static IQueryable<Student> GetAllStudents()
+        {
+           var listStudents = new List<Student>
+        {
+            new Student
+            {
+                StudentID= 101,
+                Name = "Tom",
+                TotalMarks = 800
+            },
+            new Student
+            {
+                StudentID= 102,
+                Name = "Mary",
+                TotalMarks = 900
+            },
+            new Student
+            {
+                StudentID= 103,
+                Name = "Pam",
+                TotalMarks = 800
+            },
+            new Student
+            {
+                StudentID= 104,
+                Name = "John",
+                TotalMarks = 800
+            },
+            new Student
+            {
+                StudentID= 105,
+                Name = "John",
+                TotalMarks = 900
+            },
+        };
+
+            return listStudents.AsQueryable();
+        }
         public static List<Student> GetAllStudetns()
         {
             List<Student> listStudents = new List<Student>
@@ -71,7 +108,7 @@ namespace LinqTutorials
             {
                 StudentID= 105,
                 Name = "John",
-                TotalMarks = 800
+                TotalMarks = 900
             },
         };
 

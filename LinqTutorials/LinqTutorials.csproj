@@ -52,7 +52,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="A Extension Methods\Program.cs" />
+    <Compile Include="A Extension Methods\StringHelper.cs" />
     <Compile Include="AsEnumerable.cs" />
+    <Compile Include="B Agreegate Operators\Agreegate.cs" />
+    <Compile Include="C Restriction Operators\Model\Department.cs">
+      <DependentUpon>Employee.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C Restriction Operators\Model\Employee.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C Restriction Operators\Model\Employee.cs">
+      <DependentUpon>Employee.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C Restriction Operators\Model\Employee.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="C Restriction Operators\Model\Employee1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee.tt</DependentUpon>
+    </Compile>
+    <Compile Include="C Restriction Operators\RestrictionOperators.cs" />
     <Compile Include="CastOfType.cs" />
     <Compile Include="CheckListService.cs" />
     <Compile Include="City.cs">
@@ -64,6 +89,9 @@
     <Compile Include="Contains.cs" />
     <Compile Include="ConversionOperators.cs" />
     <Compile Include="DeferedExecution.cs" />
+    <Compile Include="Deletages\CalculateArea.cs" />
+    <Compile Include="Deletages\DelegateWithLamdaExp.cs" />
+    <Compile Include="Deletages\SampleDelegate.cs" />
     <Compile Include="Department.cs">
       <DependentUpon>Joins.tt</DependentUpon>
     </Compile>
@@ -120,6 +148,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>JoinsNew.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Joins\Employee.cs" />
+    <Compile Include="Joins\InnerJoin.cs" />
+    <Compile Include="Joins\LeftJoin.cs" />
+    <Compile Include="Joins\RightJoin.cs" />
     <Compile Include="LinqTutorials.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -138,7 +170,8 @@
     <Compile Include="Model\DateFilter.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Model\Employee2.cs" />
-    <Compile Include="OrderingOperator.cs" />
+    <Compile Include="OrderingOperators\Employee.cs" />
+    <Compile Include="OrderingOperators\OrderingOperator.cs" />
     <Compile Include="OrderingOperatorsPart2.cs" />
     <Compile Include="OverClause.cs" />
     <Compile Include="Program.cs" />
@@ -158,6 +191,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EmployeeDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="C Restriction Operators\Model\Employee.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Employee.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="C Restriction Operators\Model\Employee.edmx.diagram">
+      <DependentUpon>Employee.edmx</DependentUpon>
+    </None>
     <None Include="EmployeeDB.edmx.diagram">
       <DependentUpon>EmployeeDB.edmx</DependentUpon>
     </None>
@@ -185,6 +225,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="C Restriction Operators\Model\Employee.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Employee.edmx</DependentUpon>
+      <LastGenOutput>Employee.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="C Restriction Operators\Model\Employee.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Employee.edmx</DependentUpon>
+      <LastGenOutput>Employee1.cs</LastGenOutput>
+    </Content>
     <Content Include="EmployeeDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>EmployeeDB.Context.cs</LastGenOutput>

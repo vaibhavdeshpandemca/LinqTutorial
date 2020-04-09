@@ -3,8 +3,8 @@ using System.Linq;
 
 namespace LinqTutorials
 {
-    class Joins
-    {
+    //class Joins
+    //{
         //static void Main(string[] args)
         //{
         //    //JoinsEntities2 db = new JoinsEntities2();
@@ -114,5 +114,5 @@ namespace LinqTutorials
         //        Console.Write(ex.Message);
         //    }
         //}
-    }
+    //}
 }

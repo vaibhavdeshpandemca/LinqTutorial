@@ -34,16 +34,25 @@ namespace LinqTutorials.C_Restriction_Operators
         //    Console.WriteLine();
         //    EmployeeDBContextNew context = new EmployeeDBContextNew();
         //    var departments = from dept in context.Departments
-        //                      where dept.Name == "IT"|| dept.Name == "HR" 
-        //                      select new
-        //                      {
-        //                        dept
-        //                      };
-        //      //IEnumerable<Department> departments =  context.Departments.Where(x => x.DepartmentName == "IT"|| x.DepartmentName =="HR");
-        //        foreach (var dept in departments)
+        //                      where dept.Name == "IT" || dept.Name == "HR"
+        //                      select dept;
+        //                      //select new
+        //                      //{
+        //                      //    dept
+        //                      //};
+        //    //IEnumerable<Department> departments =  context.Departments.Where(x => x.DepartmentName == "IT"|| x.DepartmentName =="HR");
+        //    foreach (var dept in departments)
+        //    {
+        //        Console.WriteLine(dept.Name);
+        //        var emplist = context.Employees.AsEnumerable()
+        //            .Where(x => x.DepartmentId == dept.ID)
+        //            ;
+        //                      //context.Employees.Where(x => x.DepartmentId == dept.ID);
+        //        foreach (var emp in emplist)
         //        {
-        //            Console.WriteLine(dept);
+        //            Console.WriteLine($"\t{emp.ID} {emp.FirstName} {emp.LastName} ");
         //        }
+        //    }
 
         //    Console.ReadLine();
         //}

@@ -88,6 +88,12 @@
     </Compile>
     <Compile Include="Contains.cs" />
     <Compile Include="ConversionOperators.cs" />
+    <Compile Include="D Partion By\CompResults.cs" />
+    <Compile Include="D Partion By\CustomDenseRankNew.cs" />
+    <Compile Include="D Partion By\Employee.cs" />
+    <Compile Include="D Partion By\PartitionBy.cs" />
+    <Compile Include="D Partion By\Program.cs" />
+    <Compile Include="D Partion By\RankDenseRank.cs" />
     <Compile Include="DeferedExecution.cs" />
     <Compile Include="Deletages\CalculateArea.cs" />
     <Compile Include="Deletages\DelegateWithLamdaExp.cs" />
@@ -279,5 +285,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
